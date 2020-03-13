@@ -1,19 +1,17 @@
-import org.junit.Assert;
-import org.junit.Test;
+
 import main.Calculator;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
 public class CalculatorTest {
     private Calculator calculator = new Calculator();
-    @Test
-    public void ATestMethod(){
-        Assert.assertTrue(true);
-    }
 
     @Test
-    public void sum(){
+    void sum(){
         final int expected = 4;
         final int actual = calculator.sum(2,2);
-        Assert.assertEquals(expected,actual);
+        assertEquals(expected,actual);
     }
 }
