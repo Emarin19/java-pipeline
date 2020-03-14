@@ -14,7 +14,7 @@ class CalculatorTest {
     }
 
     @Test
-    void substraction() {
+    void subtraction() {
         double actual = Calculator.substraction(85, 20);
         double expected = 65;
         assertEquals(expected, actual);
