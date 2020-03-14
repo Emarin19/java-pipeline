@@ -1,8 +1,8 @@
 package calculator;
 
 public class Calculator{
-    public int age;
-    public double salary;
+    private int age;
+    private double salary;
 
     public static double adding(int number, int number2){
         return number + number2;
