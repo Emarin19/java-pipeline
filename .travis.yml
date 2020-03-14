@@ -1,5 +1,12 @@
+addons:
+  sonarcloud:
+    organization: "emarin19"
+    token:
+      secure: "m6rKIWDbFeubeWnsnUFyBK35NCQJd2C2CBJo5dJisv94EkldUW5ynmL1As6v0t1AKsXIkp3fd5kPhLurSdQ8AlpnTrzdBWeJtVs6PExm3lHhEHKWpVEZY2GsPKzaRBHHH8Zpn3cm3yN9T+L/szZBN9dJJxxTwOV3FalLhonDQ9Qk2Cs53SUVHgXKvtseQVzMssJ1bCkZKBCTg03qx1jtxR4Ge2h9k4JJ0H7Fhik15Waj9NrdQo+3MyLpUIkumHiyDpTCfx6uAphnjUV4XHwmHYMsziiTVmXmXvq5/9d/ZbCBjG4s90hvujJbv2YN54ulzmQU5Mg07BuU+J41koTp2UEy2avtxkD2R2WcOxvzwNAYqguuyoom4C0zD2ImVnuWBXrhXFKknuinaOORzc7wPW/fIHLyIflcu3PzNfFZfnTJ+3HCtIldlG3hw+8pj4tJZZNbo0HGqOUfvSPvGfqZP+yIpusFaLYz9HR3TnMd1E0dXecXJKv2cMcC9qbFCNEDSMuFEnpStFts66FgMQF0VfupOozJWAEf+TJhh7jbkJZYg7leoZ/B0ovxN31tTf2ina6PqzlgaimVUE3zZoBI2chJEUWfUFM8/mdoAWJrqr1SKYX+rdwnHcpT7mcmyYqc0pX9OfhrzpT4mDTPo3dFtLKJHz5147quApFrDmgMH1k="
+
 languaje:
   java
 
 script:
   - ant dist
+  - sonar-scanner
