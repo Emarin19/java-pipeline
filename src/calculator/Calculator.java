@@ -1,7 +1,8 @@
 package calculator;
 
 public class Calculator{
-    int age;
+    public int age;
+    public double salary;
 
     public static double adding(int number, int number2){
         return number + number2;
@@ -22,5 +23,13 @@ public class Calculator{
         }else{
             return -1;
         }
+    }
+
+    public void setSalary(double salary){
+        this.salary = salary;
+    }
+
+    public void setAge(int age){
+        this.age = age;
     }
 }
